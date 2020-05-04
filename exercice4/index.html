@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 4 - Partie 2 JS</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Exercice 4 - Partie 2 JS</h1>
+        <p>Demander une note à l'utilisateur :</p>
+        <ul>
+            <li>Si elle est entre 0 et 3 afficher <i>Nul</i></li>
+            <li>Si elle est entre 4 et 6 afficher <i>Moyen</i></li>
+            <li>Si elle est entre 6 et 8 afficher <i>Assez Bien</i></li>
+            <li>Si elle est entre 8 et 9 afficher <i>Bien</i></li>
+            <li>Si elle est égale à 10 afficher <i>Excellent</i></li>
+        </ul>
+    </div>
+
+    <script>
+        // TIPS //
+        // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/if...else
+        // https://www.w3schools.com/js/js_if_else.asp
+        // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/isNaN
+
+
+        // création de la variable grade qui aura pour valeur celle entrée par l'utilisateur via la boîte de dialogue.
+        // Nous tranformons cette valeur en entier via la + unaire.
+        let grade = +(window.prompt('Veuillez saisir une note entre 0 et 10 :'));
+        // Création de la condition à l'aide de if ... else et de plusieurs else if.
+        if (isNaN(grade)) {
+            window.alert('Veuillez entrer une vraie note');
+        } else if (grade < 4) {
+            window.alert(grade + ' : Nul');
+        } else if (grade < 6) {
+            window.alert(grade + ' : Moyen');
+        } else if (grade < 8) {
+            window.alert(grade + ' : Assez Bien');
+        } else if (grade < 10) {
+            window.alert(grade + ' : Bien');
+        } else if (grade == 10) {
+            window.alert(grade + ' : Excellent');
+        } else {
+            window.alert('Veuillez entrer une note inférieure à 10');
+        }
+    </script>
+
+</body>
+
+</html>

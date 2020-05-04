@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 5 - Partie 2 JS</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Exercice 5 - Partie 2 JS</h1>
+        <p>Créer une variable <b>day</b> et lui attribuer une valeur entre 1 et 7.</p>
+        <p>A l'aide d'un switch, afficher :</p>
+        <ul>
+            <li>Lundi si <b>day</b> est égal à 1</li>
+            <li>Mardi si <b>day</b> est égal à 2</li>
+            <li>Mercredi si <b>day</b> est égal à 3</li>
+            <li>Jeudi si <b>day</b> est égal à 4</li>
+            <li>Vendredi si <b>day</b> est égal à 5</li>
+            <li>Samedi si <b>day</b> est égal à 6</li>
+            <li>Dimanche si <b>day</b> est égal à 7</li>
+        </ul>
+    </div>
+
+    <script>
+        // TIPS //
+        // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/switch
+        // https://www.w3schools.com/js/js_switch.asp
+
+
+        // création de la variable day qui aura une valeur arbitraire.
+        let day = 7;
+        // Création du switch :
+        switch (day) { // On va comparer la valeur de day dans les différents cas.
+            case 1: // cas lorsque day vaut 1.
+                window.alert(day + ' correspond à Lundi');
+                break; // on arrête le code à l'aide d'un break pour ne pas aller plus loin.
+            case 2:
+                window.alert(day + ' correspond à Mardi');
+                break;
+            case 3:
+                window.alert(day + ' correspond à Mercredi');
+                break;
+            case 4:
+                window.alert(day + ' correspond à Jeudi');
+                break;
+            case 5:
+                window.alert(day + ' correspond à Vendredi');
+                break;
+            case 6:
+                window.alert(day + ' correspond à Samedi');
+                break;
+            case 7:
+                window.alert(day + ' correspond à Dimanche');
+                break;
+            default:
+                window.alert('Veuillez donner une valeur à la variable day entre 1 et 7');
+        }
+    </script>
+
+</body>
+
+</html>

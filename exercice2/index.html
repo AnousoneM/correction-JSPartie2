@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2 - Partie 2 JS</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Exercice 2 - Partie 2 JS</h1>
+        <p>Demander à l'aide d'une boîte de dialogue l'âge d'un utilisateur. S'il a plus de 18 ans, lui afficher <i>Vous
+                êtes majeur</i>, sinon lui afficher Vous êtes <i>mineur</i>.</p>
+    </div>
+
+
+    <script>
+        // TIPS //
+        // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/if...else
+        // https://www.w3schools.com/js/js_if_else.asp
+        // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/isNaN
+
+
+        // création de la variable age qui aura pour valeur celle entrée par l'utilisateur via la boîte de dialogue.
+        // Nous tranformons cette valeur en entier via la + unaire.
+        let age = +(window.prompt('Quel âge avez-vous ?'));
+        // Création de la condition à l'aide d'un if ... else et d'un else if.
+        // Nous allons également contrôler que l'utilisateur entre bien un nombre avec : !isNaN  et qu'il entre autre chose que du vide.
+        if (isNaN(age) || age == '') {
+            window.alert('Veuillez entrer un vrai nombre');
+        } else if (age >= 18 ){ // Nous utilisons un else if pour permettre de faire un 2ème if si la 1ère condition est passée.
+            window.alert('Vous êtes majeur !');
+        } else { // Si le else if n'est pas respecté, nous affichons un autre message.
+            window.alert('Vous êtes mineur !');
+        }
+    </script>
+
+</body>
+
+</html>

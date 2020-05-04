@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1 - Partie 2 JS</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Exercice 1 - Partie 2 JS</h1>
+        <p>Créer une variable <b>number</b> et lui donner une valeur. A l'aide d'une condition, si ce nombre est
+            supérieur à 21, afficher un message.</p>
+    </div>
+
+
+    <script>
+        // TIPS //
+        // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/if...else
+        // https://www.w3schools.com/js/js_if_else.asp
+
+        let number = 22; // création de la variable number avec une valeur arbitraire.
+        // Création de la condition à l'aide d'un if
+        // Si la condition est remplie, on execute ce qu'il y a dans les accolades.
+        if (number > 21) {
+            // Concernant la syntaxe du message d'alerte, nous utilisons les magiques quotes et la syntaxe ${} pour affiche la variable.
+            window.alert(`La variable number à la valeur de ${number} : Il est bien supérieur à 21 !`)
+        }
+    </script>
+
+</body>
+
+</html>
